@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+            width: 500px;
+            margin: 0 auto;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 60px;
+            animation: rotate 2s infinite , back 2s infinite alternate; 
+        }   /*애니메이션을 동시에 선언해서 줄수있다*/
+            /*alternative = from 에서 to 갔다가 to 에서 from 으로 역순으로 반복함*/   
+
+        @keyframes rotate {  /*animation: [이름] */
+            from {transform: perspective(120px) rotatex(0deg) rotateY(0deg);}
+            50%{transform: perspective(120px) rotatex(180deg) rotateY(0deg);}
+            to{transform: perspective(120px) rotatex(180deg) rotateY(180deg);}
+        }
+        @keyframes back {  /*animation: [이름] */
+            from {background-color: red;}
+            50%{background-color: green;}
+            to{background-color: blue;}
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="box"></div>
+
+</body>
+</html>

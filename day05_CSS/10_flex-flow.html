@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+
+    <style>
+        .container {
+            display: flex;  /*나열해줌 height 에 영향을 줌*/
+            width: 500px;
+            background-color: #ccc;
+            border: 1px solid black;
+        }
+        .box {
+            width: 80px;
+            padding: 5px 50px;
+            margin: 5px;
+            background-color: black;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        #box1 {
+            flex-flow: row wrap;    /*direction 이랑 wrap 두 값을 한번에 줌*/
+        }
+        #box2 {
+            flex-flow: row nowrap;
+        }
+  
+    </style>
+</head>
+<body>
+    
+    <div class="container" id="box1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+
+</body>
+</html>

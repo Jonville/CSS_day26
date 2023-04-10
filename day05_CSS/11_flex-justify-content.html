@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+
+    <style>
+        .container {
+            display: flex;  /*나열해줌 height 에 영향을 줌*/
+            background-color: #ccc;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        .box {
+            padding: 5px 50px;
+            margin: 5px;
+            background-color: black;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        #box1 {
+            justify-content: flex-start;    /*왼쪽에서 오른쪽*/
+        }
+        #box2 {
+            justify-content: flex-end;      /*오른쪽에서 왼쪽*/
+        }
+        #box3 {
+            justify-content: center;      /*가운데정렬*/
+        }
+        #box4 {
+            justify-content: space-between;      /*처음과 끝을 채우고 나머지 공백을줌*/
+        }
+        #box5 {
+            justify-content: space-around;      /*그냥 같은 간격으로 공백을줌*/
+        }
+  
+    </style>
+</head>
+<body>
+    
+    <div class="container" id="box1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box3">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box4">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box5">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+
+</body>
+</html>

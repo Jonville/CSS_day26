@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+
+    <style>
+        .container {
+            display: flex;  /*나열해줌 height 에 영향을 줌*/
+            width: 100%;
+            height: 150px;
+            background-color: #ccc;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        .box {
+            padding: 5px 50px;
+            margin: 5px;
+            background-color: black;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        #box1 {
+            align-items: flex-start;    /*위에서 아래*/
+        }
+        #box2 {
+            align-items: flex-end;      /*아래에서 위*/
+        }
+        #box3 { 
+            align-items: center;    /*가운데 정렬*/
+        }
+        #box4 {
+            align-items: baseline;   /*문자 기준선 기준으로 맞춰줌*/
+        }
+        #box5 {
+            align-self: stretch;    /*디폴트*/
+        }
+  
+    </style>
+</head>
+<body>
+    
+    <div class="container" id="box1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box3">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box4">
+        <div class="box"><p>1</p></div>
+        <div class="box" style="font-size: 15px;"><p>2</p></div>
+        <div class="box" style="font-size: 25px;"><p>3</p></div>
+        <div class="box" style="font-size: 10px;"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+    <div class="container" id="box5">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+    </div>
+
+
+</body>
+</html>

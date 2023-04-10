@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .org {
+            width: 150px;
+            height: 180px;
+            border: 1px solid black;
+            margin: 20px;
+            float: left;
+        }
+        .org > div {
+            width: 150px;
+            height: 180px;
+        }
+        .rotatex:hover {
+            transform: rotatex(50deg);
+        }
+        #per {
+            perspective: 300px;     /*원근감을 준다*/
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="org">
+        <img src="images/sunset.jpg">
+    </div>
+    <div class="org">
+        <div class="rotatex">
+            <img src="images/sunset.jpg">  
+        </div>
+    </div>
+    <div class="org" id="per">
+        <div class="rotatex" >
+            <img src="images/sunset.jpg">  
+        </div>
+    </div>
+   
+</body>
+</html>

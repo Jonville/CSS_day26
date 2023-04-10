@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: black;
+
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header{
+            float: left;
+            background-color: #ccc;
+            width: 300px;
+            height: 800px;
+        }
+        img {
+            margin: 50px auto;
+            margin-left: 50px;
+        }
+        .profile {
+            margin-left: 50px;
+        }
+        main {
+            float: left;
+            background-color: #fff;
+            font-size: 1.3rem;
+            font-weight: bold;
+            width: 700px;
+            height: 800px;
+            
+        }
+        li  {
+            list-style: none;
+            line-height: 30px;
+            padding-left: 30px;
+        }
+        
+        .content1 {
+            font-size: 0.9rem;
+            font-weight: normal;
+        }
+        .normal {
+            list-style: circle;
+            margin-left: 40px;
+            padding-left: 0px;
+        }
+       .hard {
+            list-style: inside;
+            padding-left: 0px;
+       }
+       table, td {
+        font-size: 1rem;
+        font-weight: normal;
+        border-style: ridge;
+       }
+       th {
+        font-size: 1rem;
+        font-weight: bold;
+        border-style: ridge;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/ronnycolman3.jpg" alt="Ronnie" width="200px" height="200px">
+            <div class="profile">
+                <p>Seoul, Korea</p>
+                <p>로니킴@naver.com</p>
+                <h3>로니킴 <br>@facebook</h3>
+            </div>
+        </header>
+            <main>
+                <ul>
+                    <li class="content">🤢자기소개</li>
+                    <li class="content1"><span style="background-color: yellow;">
+                        프로그래밍에 관심이 많은</span> <br> 서울사는 홍길동 입니다.</li><hr>
+                    <li>경력</li>
+                    <ul class="content1">
+                        <li class="hard">프론트엔트 개발</li>
+                        <ul>
+                            <li class="normal"> HTML 잘함</li>
+                            <li class="normal"> CSS 좀함</li>
+                         </ul>
+                    </ul>
+                    <ul class="content1">
+                        <li class="hard">백엔드 개발</li>
+                        <ul>
+                            <li class="normal"> 자바 고수</li>
+                            <li class="normal"> 데이터베이스 굿</li>
+                         </ul>
+                    </ul>
+                    <hr>
+                    <li>숙련도</li><hr>
+                    <li>학력</li>
+                    
+                    <table>
+                        <tr style="background-color: #ccc;">
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                        <tr>
+                            <td>짱짱대학교</td>
+                            <td>컴퓨터공학</td>
+                            <td>2009.03 ~ 2013.2</td>
+                            <td>졸업</td>
+                        </tr>
+                        <tr>
+                            <td>베리굿고등학교</td>
+                            <td>-</td>
+                            <td>2005.03 ~ 2009.2</td>
+                            <td>졸업</td>
+                        </tr>
+                    </table>
+                    <hr>
+                </ul>
+            </main>
+    </div>
+    
+</body>
+</html>
